@@ -1,0 +1,116 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  border: solid 2px pink;
+}
+/*利用","去同時設定兩個部分*/
+html,body{
+  background-color: #5d8c75;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*讓內外距為0*/
+  font-family: 微軟正黑體;
+  font-weight: 700;
+}
+a{
+  color: initial;
+  text-decoration: initial;
+}
+.box{
+  width: 480px;
+  background-color: #fff;
+  box-shadow: 0px 0px 35px rgba(0,0,0,0.3);
+  transition: 0.5s;
+}
+.box:hover{
+  box-shadow: 5px 5px 60px rgba(0,0,0,0.4);
+  transform: translate(-5px,-5px);
+}
+.box:hover .top{
+  height: 250px;
+}
+.top{
+  background-image: url(https://chiu945.github.io/picture/a1.jpg);
+  background-position: center;
+  background-size: cover;
+  /*使用cover 可以讓照片呈現的是整張*/
+  height: 330px;
+  position: relative;
+  transition: 0.5s;
+}
+/*下面那個是因為 .tag 包含在 .top 裡面，所以才這樣打*/
+.top .tag{
+  width: 25px;
+  height: 50px;
+  background-color: #5d8c75;
+  float: right;
+  margin-right: 20px;
+}
+.top .name{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 5px 15px;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  background: linear-gradient(transparent 0%, black 100%);
+  /*用一個漸層的透明圖層，由上到下逐漸變黑，這樣上面白色的字就會變得比較明顯*/
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.top .name .smallText{
+  font-size: 14px;
+}
+.cirbutton{
+  width: 50px;
+  height: 50px;
+  background-color: #cbf5e1;
+  border-radius: 50%;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
+.bottom{
+  padding: 10px 20px 20px 20px;
+}
+.bottom li{
+  padding: 5px 0px;
+}
+.bottom h3{
+  display: inline-block;
+  /*讓她們呈現在同一行*/
+}
+.bottom ul{
+  list-style: none;
+  /*讓前面的點點消失*/
+  padding-left: 0;
+}
+.buttons{
+  margin-top: 30px;
+}
+.btnWebsite{
+  background-color: #5d8c75;
+  color: white;
+  transition: 0.5s;
+}
+.btnWebsite:hover{
+  background-color: #b8decc;
+}
+.btnNews{
+  border: solid 1px black;
+  float: right;
+}
+.btnNews:hover{
+background-color: #eee;
+}
+.btn{
+  display:inline-block;
+}
